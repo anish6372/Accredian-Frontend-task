@@ -411,20 +411,20 @@ export default function ReferAndEarn() {
         <h3 className="text-2xl font-semibold mb-16 me-4 sm:me-24">
           Frequently Asked <span className="text-blue-500">Questions</span>
         </h3>
-        <div className="flex flex-col sm:flex-row justify-between ">
-          <button className="bg-gray-200 text-blue-500 p-2 ms-4 sm:ms-76 w-40 mb-4 sm:mb-0">
+        <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-16 ">
+          <button className="bg-gray-200 text-blue-500 p-2 ms-66 sm:ms-76  w-40 mb-4 sm:mb-0">
             Eligibility
           </button>
-          <span className="text-blue-500 me-4 sm:me-84 text-sm">
+          <span className="text-blue-500 sm:me-150 text-sm">
             Do I need to have prior product management and project management
             experience to enroll in this program?
           </span>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between mt-4">
+        <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-16 mt-4">
           <button className="bg-gray-200 text-blue-500 p-2 w-40 ms-76 sm:ms-76 mb-4 sm:mb-0">
             How to use?
           </button>
-          <span className="text-white-300   me-84 text-sm">
+          <span className="text-white-300    text-sm">
             Do I need to have prior product management and project management
             experience to enroll in this program?
           </span>
