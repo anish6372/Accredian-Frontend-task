@@ -71,7 +71,7 @@ export default function ReferAndEarn() {
         </a>
       </div>
 
-      {/* Navigation Bar */}
+     
       <nav className="py-4 px-4 sm:px-10 flex flex-col sm:flex-row justify-between items-center">
         <div className="flex items-center space-x-6">
           <span className="text-blue-600 font-bold text-xl">accredian</span>
@@ -93,71 +93,55 @@ export default function ReferAndEarn() {
         </div>
       </nav>
 
-      <div className="border-black-200 bg-blue-100 flex flex-wrap justify-between w-full  ms-130 sm:w-[450px]  mt-4 rounded-2xl py-2">
-        <h5 className="ms-4 sm:ms-12">Refer</h5>
-        <h5>Benefits</h5>
-        <h5>FaQS</h5>
-        <h5 className="me-4 sm:me-8">Support</h5>
-      </div>
+      <div className="border border-black-200 bg-blue-100 flex flex-wrap justify-between w-full sm:w-[450px] mt-4 rounded-2xl py-2 px-4 ">
+  <div className="flex w-full sm:w-auto justify-center sm:justify-between gap-4">
+    <h5>Refer</h5>
+    <h5>Benefits</h5>
+    <h5>FAQs</h5>
+    <h5>Support</h5>
+  </div>
+</div>
+
 
       
-      <section className="relative text-center py-10 bg-blue-100 mt-4 w-[400px] sm:w-3/6 sm:ms-84 rounded-md h-auto sm:h-[400px] ms-69">
-  <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-    <div>
-    <img
-        src={first}
-        alt="Money"
-        className="absolute top-2 left-4 w-15 h-14 "
-      />
-      <h2 className="text-3xl sm:text-5xl font-bold ms-4">Let's Learn </h2>
-      <h2 className="text-3xl sm:text-5xl font-bold">& Earn</h2>
-      <div className="mt-8 me-12">
-        <p className="text-gray-600 text-xl">Get a chance to win</p>
-        <p className="text-gray-600 mb-6 text-xl">
-          up-to{" "}
-          <span className="text-blue-700 text-2xl font-bold">Rs. 15,000</span>
-        </p>
+      <section className="relative text-center py-10 bg-blue-100 mt-4 w-full max-w-md sm:max-w-3xl mx-auto rounded-md h-auto sm:h-[400px]">
+      <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-6">
+        <div className="text-center sm:text-left">
+          <img
+            src={first}
+            alt="Money"
+            className="absolute top-2 left-4 w-12 h-12"
+          />
+          <h2 className="text-3xl sm:text-5xl font-bold">Let's Learn</h2>
+          <h2 className="text-3xl sm:text-5xl font-bold">& Earn</h2>
+          <div className="mt-6">
+            <p className="text-gray-600 text-xl">Get a chance to win</p>
+            <p className="text-gray-600 mb-6 text-xl">
+              up to <span className="text-blue-700 text-2xl font-bold">Rs. 15,000</span>
+            </p>
+          </div>
+          <button
+            onClick={handleOpen}
+            className="bg-blue-500 w-28 text-white border border-black rounded-md h-9 mt-6 hover:bg-blue-600 transition"
+          >
+            Refer Now
+          </button>
+        </div>
+
+        <div className="relative overflow-hidden w-full sm:w-[350px] h-[400px]">
+          <img
+            src={referimage}
+            alt="Refer and Earn"
+            className="transition-transform duration-300 ease-in-out transform hover:scale-110 w-full h-full object-cover"
+          />
+
+          <img src={first} alt="Money" className="absolute top-2 left-4 w-12 h-12" />
+          <img src={first} alt="Money" className="absolute top-1/3 right-6 w-12 h-12" />
+          <img src={first} alt="Money" className="absolute bottom-10 left-10 w-12 h-12" />
+          <img src={first} alt="Money" className="absolute bottom-4 right-12 w-12 h-12" />
+        </div>
       </div>
-      <button
-        onClick={handleOpen}
-        className="bg-blue-500 w-28 text-white border-black-200 rounded-md h-9 me-20 mt-8"
-      >
-        Refer now
-      </button>
-    </div>
-
-    
-    <div className="relative mt-[-40px] overflow-hidden w-full sm:w-[350px] h-[400px]">
-      <img
-        src={referimage}
-        alt="Refer and Earn"
-        className="transition-transform duration-300 ease-in-out transform hover:scale-110 w-full h-full object-cover"
-      />
-
-     
-      <img
-        src={first}
-        alt="Money"
-        className="absolute top-2 left-4 w-15 h-14 "
-      />
-      <img
-        src={first}
-        alt="Money"
-        className="absolute top-1/3 right-6 w-15 h-14 "
-      />
-      <img
-        src={first}
-        alt="Money"
-        className="absolute bottom-10 left-10 w-15 h-14 "
-      />
-      <img
-        src={first}
-        alt="Money"
-        className="absolute bottom-4 right-12 w-15 h-14 "
-      />
-    </div>
-  </div>
-</section>
+    </section>
 
 
       
@@ -239,52 +223,53 @@ export default function ReferAndEarn() {
       )}
 
       
-      <section className="py-10 bg-blue-100 text-center mt-8 h-auto sm:h-[450px]">
-        <h3 className="text-2xl font-semibold mb-6">
-          How Do I <span className="text-blue-600">Refer?</span>
-        </h3>
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-          <div className="text-center p-4">
-            <div className="w-24 h-24 bg-white shadow-lg rounded-full flex items-center justify-center mx-auto mb-4">
-              <FaUser className="text-4xl text-blue-600" />
-            </div>
-            <div>
-              <p></p>
-              <p></p>
-              <p></p>
-            </div>
-            <p>Submit referrals easily .</p>
+<section className="py-10 bg-blue-100 text-center mt-8 h-auto">
+      <h3 className="text-2xl sm:text-3xl font-semibold mb-6">
+        How Do I <span className="text-blue-600">Refer?</span>
+      </h3>
+      <div className="max-w-5xl mx-auto flex flex-wrap justify-center sm:justify-between items-center gap-6">
+       
+        <div className="w-full sm:w-1/3 text-center p-4 flex flex-col items-center">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white shadow-lg rounded-full flex items-center justify-center mb-4">
+            <FaUser className="text-3xl sm:text-4xl text-blue-600" />
+          </div>
+          <div>
+            <p>Submit referrals easily</p>
             <p>via our website's referral</p>
-            <p>section</p>
-          </div>
-          <div className="text-center p-4">
-            <div className="w-24 h-24 bg-white shadow-lg rounded-full flex items-center justify-center mx-auto mb-4">
-              <FaBook className="text-4xl text-blue-600" />
-            </div>
-            <div>
-              <p>Earn rewards once</p>
-              <p> your referral joins an Accredian</p>
-              <p>program</p>
-            </div>
-          </div>
-          <div className="text-center p-4">
-            <div className="w-24 h-24 bg-white shadow-lg rounded-full flex items-center justify-center mx-auto mb-4">
-              <FaBriefcase className="text-4xl text-blue-600" />
-            </div>
-            <div>
-              <p>Referrer receives a bonus</p>
-              <p>30 days after program </p>
-              <p>enrollment.</p>
-            </div>
+            <p>section.</p>
           </div>
         </div>
-        <button
-          onClick={handleOpen}
-          className="bg-blue-500 text-white px-6 py-2 rounded mt-16"
-        >
-          Refer Now
-        </button>
-      </section>
+
+        <div className="w-full sm:w-1/3 text-center p-4 flex flex-col items-center">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white shadow-lg rounded-full flex items-center justify-center mb-4">
+            <FaBook className="text-3xl sm:text-4xl text-blue-600" />
+          </div>
+          <div>
+            <p>Earn rewards once</p>
+            <p>your referral joins an Accredian</p>
+            <p>program.</p>
+          </div>
+        </div>
+
+        <div className="w-full sm:w-1/3 text-center p-4 flex flex-col items-center">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white shadow-lg rounded-full flex items-center justify-center mb-4">
+            <FaBriefcase className="text-3xl sm:text-4xl text-blue-600" />
+          </div>
+          <div>
+            <p>Referrer receives a bonus</p>
+            <p>30 days after program</p>
+            <p>enrollment.</p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        onClick={handleOpen}
+        className="bg-blue-500 text-white px-6 py-3 rounded-lg mt-10 sm:mt-16 shadow-md hover:bg-blue-600 transition duration-300"
+      >
+        Refer Now
+      </button>
+    </section>
 
      
       <section className="py-10 bg-gray-100 text-center ms-4 sm:ms-40">
